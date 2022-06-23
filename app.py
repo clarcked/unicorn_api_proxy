@@ -37,7 +37,7 @@ try:
     BACKEND_API = response['Parameter']['Value'].rstrip('/')
 except:
     print("SSM unavailable - do you have an IAM role")
-    BACKEND_API = 'http://catsndogs.lol'
+    BACKEND_API = 'http://mod-c-LoadB-JG4GQHZ6T5LT-243974093.us-east-1.elb.amazonaws.com'
 print("Backend set to: {}".format(BACKEND_API))
 
 #Make sure we can find unicorn files
